@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import sys
+    from sys import argv
+
+    num = len(argv)
     result = 0
-    for arg in sys.argv:
-        if arg != sys.argv[0]:
-            result += int(arg)
-    print(result)
+
+    if num > 1:
+        for i in range(1, num):
+            result += int(argv[i])
+    print("{:d}".format(result))

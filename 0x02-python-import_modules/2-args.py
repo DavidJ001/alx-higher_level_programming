@@ -1,16 +1,13 @@
 #!/usr/bin/python3
-import sys
-
 if __name__ == "__main__":
-    """Print all given argu"""
+    from sys import argv
 
-    numOfArg = len(sys.argv)
-    if (numOfArg == 1):
+    num = len(argv)
+    if num - 1 == 0:
         print("0 arguments.")
-    elif numOfArg == 2:
-        print("1 argument:")
-        print("1: {}".format(sys.argv[1]))
+    elif num - 1 == 1:
+        print("{:d} argument:".format(num - 1))
     else:
-        print("{:d} arguments:".format(numOfArg - 1))
-        for i in range(1, numOfArg):
-            print("{}: {}".format(i, sys.argv[i]))
+        print("{:d} arguments:".format(num - 1))
+    for i in range(1, num):
+        print("{:d}: {}".format(i, argv[i]))
