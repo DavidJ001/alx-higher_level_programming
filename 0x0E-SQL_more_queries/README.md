@@ -1,5 +1,3 @@
-![image](https://user-images.githubusercontent.com/83606182/183875690-8ca3f94c-ca7b-4cb0-9267-4790d2f3bef6.png)
-
 
 # SQL - More queries
 
